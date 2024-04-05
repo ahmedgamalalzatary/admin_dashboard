@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Test HTML Layout</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <!-- Font Awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="small_aside">
+                <i class="fa-solid fa-bars"></i>
+                <div class="aside">
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-house"></i>
+                            <h3>Dashboard</h3>
+                        </li>
+                        <li class="active_button">
+                            <i class="fa-solid fa-hand-holding-dollar"></i>
+                            <h3>iq</h3>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-money-bill-transfer"></i>
+                            <h3>quotex</h3>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-wallet"></i>
+                            <h3>pocket</h3>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-money-check"></i>
+                            <h3>po to po</h3>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-credit-card"></i>
+                            <h3>po to qx</h3>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-money-check-dollar"></i>
+                            <h3>qx to qx</h3>
+                        </li>
+                        <li class="settings_button ">
+                            <i class="fa-solid fa-gear"></i>
+                            <h3>settings</h3>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                            <h3>sign out</h3>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="nav">
+                <li>
+                    <div id="digital-clock" class=" digital">
+                        <div id="digital-time">
+                            <div id="time" class="time"></div>
+                            <div id="date" class="date"></div>
+                        </div>
+                    </div>
+                </li>
+                <li class="dark_mode_icon">
+                    <i class="fa-regular fa-sun"></i>
+                </li>
+                <li class="notification">
+                    <i class="far fa-bell"></i>
+                </li>
+                <li class="robot">
+                    <img src="Robot.png" alt="" />
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+    <aside>
+        <div class="sidebar">
+            <div class="sidebar_head">
+                <div class="image-text">
+                    <div class="image">
+                        T
+                    </div>
+                    <div class="text_head">trade mate</div>
+                </div>
+            </div>
+            <div class="sidebody">
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-house"></i>
+                        <h3>Dashboard</h3>
+                    </li>
+                    <li class="active_button">
+                        <i class="fa-solid fa-hand-holding-dollar"></i>
+                        <h3>iq</h3>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-money-bill-transfer"></i>
+                        <h3>quotex</h3>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-wallet"></i>
+                        <h3>pocket</h3>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-money-check"></i>
+                        <h3>po to po</h3>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-credit-card"></i>
+                        <h3>po to qx</h3>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-money-check-dollar"></i>
+                        <h3>qx to qx</h3>
+                    </li>
+                    <li class="settings_button ">
+                        <i class="fa-solid fa-gear"></i>
+                        <h3>settings</h3>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <h3>sign out</h3>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="sideIcon">
+            <i class="fa-solid fa-arrow-left"></i>
+        </div>
+    </aside>
+    <main>
+        <div class="main_container">
+            <!-- dashboard section -->
+            <div class="dashboard  ">
+                <div class="total">
+                    <div class="total_users">
+                        <div class="user_status">
+                            <div class="status">
+                                <p>total users</p>
+                                <h3></h3>
+                            </div>
+                            <i class="fa-regular fa-user"></i>
+                        </div>
+                        <div class="update">
+                            <i class="fa-solid fa-arrow-trend-up"></i>
+                            <div class="generated"></div>
+                            <p>up from last week</p>
+                        </div>
+                    </div>
+                    <div class="total_added">
+                        <div class="user_status">
+                            <div class="status">
+                                <p>total added</p>
+                                <h3></h3>
+                            </div>
+                            <i class="fa-solid fa-cube"></i>
+                        </div>
+                        <div class="update">
+                            <i class="fa-solid fa-arrow-trend-up"></i>
+                            <div class="generated"></div>
+                            <p>up from yesterday</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="report_section">
+                    <div class="report_options">
+                        <div class="report_dropdown">
+                            <div class="select">
+                                <span class="selected">pdf
+                            </div></span>
+                            <div class="caret">
+                            </div>
+                            <ul class="menu">
+                                <li>pdf</li>
+                                <li>excel</li>
+                                <li>txt</li>
+                            </ul>
+                        </div>
+                        <div class="date">
+                            <input type="date">
+                        </div>
+                        <button class="generate">generate</button>
+                    </div>
+                </div>
+                <div class="charts">
+                    <div class="first_chart">
+                        <canvas id="myChart"></canvas>
+                    </div>
+                    <div class="chart_container">
+                        <div class="seconed_canvas">
+                            <canvas id="myChartDoughnut"></canvas>
+                        </div>
+                        <div class="third_canvas">
+                            <canvas id="myLineChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- iq section -->
+            <div class="iq section active_layout">
+                <div class="table">
+                    <div class="table_head">
+                        <div class="search">
+                            <input type="search" name="search" id="search" placeholder="search" checked>
+                            <div class="search_icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </div>
+                        <div class="options">
+                            <div class="dropdown">
+                                <div class="select">
+                                    <span class="selected">view
+                                </div></span>
+                                <div class="caret">
+                                </div>
+                                <ul class="menu">
+                                    <li>view</li>
+                                    <li>update</li>
+                                    <li>delete</li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <button class="apply_button">apply
+                                </button>
+                            </div>
+                        </div>
+                        <div class="upper_buttons">
+                            <button class="select_button">select all</button>
+                            <button class="add_button">add</button>
+                        </div>
+                    </div>
+                    <div class="table_body">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>ID</th>
+                                    <th>ID Master</th>
+                                    <th>ID Slave</th>
+                                    <th>Period</th>
+                                    <th>From</th>
+                                    <th>to</th>
+                                    <th>Date</th>
+                                    <th>Updated Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="checkbox" class="rowCheckbox"></td>
+                                    <td>308</td>
+                                    <td>ib844509dg@waterstage.com</td>
+                                    <td>Services@geousafemrecovery.com</td>
+                                    <td>308</td>
+                                    <td>12-9-2023</td>
+                                    <td>12-9-2023</td>
+                                    <td>12-9-2024 03:12:29 PM</td>
+                                    <td>12-9-2024 03:12:29 PM</td>
+
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="rowCheckbox"></td>
+                                    <td>308</td>
+                                    <td>ib844509dg@waterstage.com</td>
+                                    <td>Services@geousafemrecovery.com</td>
+                                    <td>308</td>
+                                    <td>12-9-2023</td>
+                                    <td>12-9-2023</td>
+                                    <td>12-9-2024 03:12:29 PM</td>
+                                    <td>12-9-2024 03:12:29 PM</td>
+
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="rowCheckbox"></td>
+                                    <td>308</td>
+                                    <td>ib844509dg@waterstage.com</td>
+                                    <td>Services@geousafemrecovery.com</td>
+                                    <td>308</td>
+                                    <td>12-9-2023</td>
+                                    <td>12-9-2023</td>
+                                    <td>12-9-2024 03:12:29 PM</td>
+                                    <td>12-9-2024 03:12:29 PM</td>
+
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="rowCheckbox"></td>
+                                    <td>308</td>
+                                    <td>ib844509dg@waterstage.com</td>
+                                    <td>Services@geousafemrecovery.com</td>
+                                    <td>308</td>
+                                    <td>12-9-2023</td>
+                                    <td>12-9-2023</td>
+                                    <td>12-9-2024 03:12:29 PM</td>
+                                    <td>12-9-2024 03:12:29 PM</td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table_foot">
+                        <div class="down_buttons">
+                            <button>import</button>
+                            <button>export</button>
+                        </div>
+                        <div class="pages">
+                            <p>shows</p>
+                            <input type="number" name="pages" id="NumOfPages" value="1" min='1' max="10">
+                            <p>pages</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- quotex section -->
+            <div class="quotex section ">
+                <div class="table">
+                    <div class="table_head">
+                        <div class="search">
+                            <input type="search" name="search" id="search" placeholder="search" checked>
+                            <div class="search_icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </div>
+                        <div class="options">
+                            <div class="dropdown">
+                                <div class="select">
+                                    <span class="selected">view
+                                </div></span>
+                                <div class="caret">
+                                </div>
+                                <ul class="menu">
+                                    <li>view</li>
+                                    <li>update</li>
+                                    <li>delete</li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <button class="apply_button">apply
+                                </button>
+                            </div>
+                        </div>
+                        <div class="upper_buttons">
+                            <button class="select_button ">select all</button>
+                            <button class="add_button">add</button>
+                        </div>
+                    </div>
+                    <div class="table_body">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>ID</th>
+                                    <th>ID Master</th>
+                                    <th>ID Slave</th>
+                                    <th>Period</th>
+                                    <th>From</th>
+                                    <th>to</th>
+                                    <th>Date</th>
+                                    <th>Updated Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="checkbox" class="rowCheckbox"></td>
+                                    <td>308</td>
+                                    <td>ib844509dg@waterstage.com</td>
+                                    <td>Services@geousafemrecovery.com</td>
+                                    <td>308</td>
+                                    <td>12-9-2023</td>
+                                    <td>12-9-2023</td>
+                                    <td>12-9-2024 03:12:29 PM</td>
+                                    <td>12-9-2024 03:12:29 PM</td>
+
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="rowCheckbox"></td>
+                                    <td>308</td>
+                                    <td>ib844509dg@waterstage.com</td>
+                                    <td>Services@geousafemrecovery.com</td>
+                                    <td>308</td>
+                                    <td>12-9-2023</td>
+                                    <td>12-9-2023</td>
+                                    <td>12-9-2024 03:12:29 PM</td>
+                                    <td>12-9-2024 03:12:29 PM</td>
+
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="rowCheckbox"></td>
+                                    <td>308</td>
+                                    <td>ib844509dg@waterstage.com</td>
+                                    <td>Services@geousafemrecovery.com</td>
+                                    <td>308</td>
+                                    <td>12-9-2023</td>
+                                    <td>12-9-2023</td>
+                                    <td>12-9-2024 03:12:29 PM</td>
+                                    <td>12-9-2024 03:12:29 PM</td>
+
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="rowCheckbox"></td>
+                                    <td>308</td>
+                                    <td>ib844509dg@waterstage.com</td>
+                                    <td>Services@geousafemrecovery.com</td>
+                                    <td>308</td>
+                                    <td>12-9-2023</td>
+                                    <td>12-9-2023</td>
+                                    <td>12-9-2024 03:12:29 PM</td>
+                                    <td>12-9-2024 03:12:29 PM</td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table_foot">
+                        <div class="down_buttons">
+                            <button>import</button>
+                            <button>export</button>
+                        </div>
+                        <div class="pages">
+                            <p>shows</p>
+                            <input type="number" name="pages" id="NumOfPages" value="1" min='1' max="10">
+                            <p>pages</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pocket section">
+                <div class="table">
+                    <div class="table_head">
+                        <div class="search">
+                            <input type="search" name="search" id="search" placeholder="search" checked>
+                            <div class="search_icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </div>
+                        <div class="options">
+                            <div class="dropdown">
+                                <div class="select">
+                                    <span class="selected">view
+                                </div></span>
+                                <div class="caret">
+                                </div>
+                                <ul class="menu">
+                                    <li>view</li>
+                                    <li>update</li>
+                                    <li>delete</li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <button class="apply_button">apply
+                                </button>
+                            </div>
+                        </div>
+                        <div class="upper_buttons">
+                            <button class="select_button">select all</button>
+                            <button class="add_button">add</button>
+                        </div>
+                    </div>
+                    <div class="table_body">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>ID</th>
+                                    <th>ID Master</th>
+                                    <th>ID Slave</th>
+                                    <th>Period</th>
+                                    <th>From</th>
+                                    <th>to</th>
+                                    <th>Date</th>
+                                    <th>Updated Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="checkbox" class="rowCheckbox"></td>
+                                    <td>308</td>
+                                    <td>ib844509dg@waterstage.com</td>
+                                    <td>Services@geousafemrecovery.com</td>
+                                    <td>308</td>
+                                    <td>12-9-2023</td>
+                                    <td>12-9-2023</td>
+                                    <td>12-9-2024 03:12:29 PM</td>
+                                    <td>12-9-2024 03:12:29 PM</td>
+
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="rowCheckbox"></td>
+                                    <td>308</td>
+                                    <td>ib844509dg@waterstage.com</td>
+                                    <td>Services@geousafemrecovery.com</td>
+                                    <td>308</td>
+                                    <td>12-9-2023</td>
+                                    <td>12-9-2023</td>
+                                    <td>12-9-2024 03:12:29 PM</td>
+                                    <td>12-9-2024 03:12:29 PM</td>
+
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="rowCheckbox"></td>
+                                    <td>308</td>
+                                    <td>ib844509dg@waterstage.com</td>
+                                    <td>Services@geousafemrecovery.com</td>
+                                    <td>308</td>
+                                    <td>12-9-2023</td>
+                                    <td>12-9-2023</td>
+                                    <td>12-9-2024 03:12:29 PM</td>
+                                    <td>12-9-2024 03:12:29 PM</td>
+
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="rowCheckbox"></td>
+                                    <td>308</td>
+                                    <td>ib844509dg@waterstage.com</td>
+                                    <td>Services@geousafemrecovery.com</td>
+                                    <td>308</td>
+                                    <td>12-9-2023</td>
+                                    <td>12-9-2023</td>
+                                    <td>12-9-2024 03:12:29 PM</td>
+                                    <td>12-9-2024 03:12:29 PM</td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table_foot">
+                        <div class="down_buttons">
+                            <button>import</button>
+                            <button>export</button>
+                        </div>
+                        <div class="pages">
+                            <p>shows</p>
+                            <input type="number" name="pages" id="NumOfPages" value="1" min='1' max="10">
+                            <p>pages</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- po to po section -->
+            <div class="potopo section">
+                <div class="table">
+                    <div class="table_head">
+                        <div class="search">
+                            <input type="search" name="search" id="search" placeholder="search" checked>
+                            <div class="search_icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </div>
+                        <div class="options">
+                            <div class="dropdown">
+                                <div class="select">
+                                    <span class="selected">view
+                                </div></span>
+                                <div class="caret">
+                                </div>
+                                <ul class="menu">
+                                    <li>view</li>
+                                    <li>update</li>
+                                    <li>delete</li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <button class="apply_button">apply
+                                </button>
+                            </div>
+                        </div>
+                        <div class="upper_buttons">
+                            <button class="select_button">select all</button>
+                            <button class="add_button">add</button>
+                        </div>
+                    </div>
+                    <div class="table_body">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>ID</th>
+                                    <th>ID Master</th>
+                                    <th>ID Slave</th>
+                                    <th>Period</th>
+                                    <th>From</th>
+                                    <th>to</th>
+                                    <th>Date</th>
+                                    <th>Updated Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="checkbox" class="rowCheckbox"></td>
+                                    <td>308</td>
+                                    <td>ib844509dg@waterstage.com</td>
+                                    <td>Services@geousafemrecovery.com</td>
+                                    <td>308</td>
+                                    <td>12-9-2023</td>
+                                    <td>12-9-2023</td>
+                                    <td>12-9-2024 03:12:29 PM</td>
+                                    <td>12-9-2024 03:12:29 PM</td>
+
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="rowCheckbox"></td>
+                                    <td>308</td>
+                                    <td>ib844509dg@waterstage.com</td>
+                                    <td>Services@geousafemrecovery.com</td>
+                                    <td>308</td>
+                                    <td>12-9-2023</td>
+                                    <td>12-9-2023</td>
+                                    <td>12-9-2024 03:12:29 PM</td>
+                                    <td>12-9-2024 03:12:29 PM</td>
+
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="rowCheckbox"></td>
+                                    <td>308</td>
+                                    <td>ib844509dg@waterstage.com</td>
+                                    <td>Services@geousafemrecovery.com</td>
+                                    <td>308</td>
+                                    <td>12-9-2023</td>
+                                    <td>12-9-2023</td>
+                                    <td>12-9-2024 03:12:29 PM</td>
+                                    <td>12-9-2024 03:12:29 PM</td>
+
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="rowCheckbox"></td>
+                                    <td>308</td>
+                                    <td>ib844509dg@waterstage.com</td>
+                                    <td>Services@geousafemrecovery.com</td>
+                                    <td>308</td>
+                                    <td>12-9-2023</td>
+                                    <td>12-9-2023</td>
+                                    <td>12-9-2024 03:12:29 PM</td>
+                                    <td>12-9-2024 03:12:29 PM</td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table_foot">
+                        <div class="down_buttons">
+                            <button>import</button>
+                            <button>export</button>
+                        </div>
+                        <div class="pages">
+                            <p>shows</p>
+                            <input type="number" name="pages" id="NumOfPages" value="1" min='1' max="10">
+                            <p>pages</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- po to qx section -->
+            <div class="potoqx section">
+                <div class="table">
+                    <div class="table_head">
+                        <div class="search">
+                            <input type="search" name="search" id="search" placeholder="search" checked>
+                            <div class="search_icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </div>
+                        <div class="options">
+                            <div class="dropdown">
+                                <div class="select">
+                                    <span class="selected">view
+                                </div></span>
+                                <div class="caret">
+                                </div>
+                                <ul class="menu">
+                                    <li>view</li>
+                                    <li>update</li>
+                                    <li>delete</li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <button class="apply_button">apply
+                                </button>
+                            </div>
+                        </div>
+                        <div class="upper_buttons">
+                            <button class="select_button">select all</button>
+                            <button class="add_button">add</button>
+                        </div>
+                    </div>
+                    <div class="table_body">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>ID</th>
+                                    <th>ID Master</th>
+                                    <th>ID Slave</th>
+                                    <th>Period</th>
+                                    <th>From</th>
+                                    <th>to</th>
+                                    <th>Date</th>
+                                    <th>Updated Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="checkbox" class="rowCheckbox"></td>
+                                    <td>308</td>
+                                    <td>ib844509dg@waterstage.com</td>
+                                    <td>Services@geousafemrecovery.com</td>
+                                    <td>308</td>
+                                    <td>12-9-2023</td>
+                                    <td>12-9-2023</td>
+                                    <td>12-9-2024 03:12:29 PM</td>
+                                    <td>12-9-2024 03:12:29 PM</td>
+
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="rowCheckbox"></td>
+                                    <td>308</td>
+                                    <td>ib844509dg@waterstage.com</td>
+                                    <td>Services@geousafemrecovery.com</td>
+                                    <td>308</td>
+                                    <td>12-9-2023</td>
+                                    <td>12-9-2023</td>
+                                    <td>12-9-2024 03:12:29 PM</td>
+                                    <td>12-9-2024 03:12:29 PM</td>
+
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="rowCheckbox"></td>
+                                    <td>308</td>
+                                    <td>ib844509dg@waterstage.com</td>
+                                    <td>Services@geousafemrecovery.com</td>
+                                    <td>308</td>
+                                    <td>12-9-2023</td>
+                                    <td>12-9-2023</td>
+                                    <td>12-9-2024 03:12:29 PM</td>
+                                    <td>12-9-2024 03:12:29 PM</td>
+
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="rowCheckbox"></td>
+                                    <td>308</td>
+                                    <td>ib844509dg@waterstage.com</td>
+                                    <td>Services@geousafemrecovery.com</td>
+                                    <td>308</td>
+                                    <td>12-9-2023</td>
+                                    <td>12-9-2023</td>
+                                    <td>12-9-2024 03:12:29 PM</td>
+                                    <td>12-9-2024 03:12:29 PM</td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table_foot">
+                        <div class="down_buttons">
+                            <button>import</button>
+                            <button>export</button>
+                        </div>
+                        <div class="pages">
+                            <p>shows</p>
+                            <input type="number" name="pages" id="NumOfPages" value="1" min='1' max="10">
+                            <p>pages</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- qx to qx section -->
+            <div class="qxtoqx section">
+                <div class="table">
+                    <div class="table_head">
+                        <div class="search">
+                            <input type="search" name="search" id="search" placeholder="search" checked>
+                            <div class="search_icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </div>
+                        <div class="options">
+                            <div class="dropdown">
+                                <div class="select">
+                                    <span class="selected">view
+                                </div></span>
+                                <div class="caret">
+                                </div>
+                                <ul class="menu">
+                                    <li>view</li>
+                                    <li>update</li>
+                                    <li>delete</li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <button class="apply_button">apply
+                                </button>
+                            </div>
+                        </div>
+                        <div class="upper_buttons">
+                            <button class="select_button">select all</button>
+                            <button class="add_button">add</button>
+                        </div>
+                    </div>
+                    <div class="table_body">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>ID</th>
+                                    <th>ID Master</th>
+                                    <th>ID Slave</th>
+                                    <th>Period</th>
+                                    <th>From</th>
+                                    <th>to</th>
+                                    <th>Date</th>
+                                    <th>Updated Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="checkbox" class="rowCheckbox"></td>
+                                    <td>308</td>
+                                    <td>ib844509dg@waterstage.com</td>
+                                    <td>Services@geousafemrecovery.com</td>
+                                    <td>308</td>
+                                    <td>12-9-2023</td>
+                                    <td>12-9-2023</td>
+                                    <td>12-9-2024 03:12:29 PM</td>
+                                    <td>12-9-2024 03:12:29 PM</td>
+
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="rowCheckbox"></td>
+                                    <td>308</td>
+                                    <td>ib844509dg@waterstage.com</td>
+                                    <td>Services@geousafemrecovery.com</td>
+                                    <td>308</td>
+                                    <td>12-9-2023</td>
+                                    <td>12-9-2023</td>
+                                    <td>12-9-2024 03:12:29 PM</td>
+                                    <td>12-9-2024 03:12:29 PM</td>
+
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="rowCheckbox"></td>
+                                    <td>308</td>
+                                    <td>ib844509dg@waterstage.com</td>
+                                    <td>Services@geousafemrecovery.com</td>
+                                    <td>308</td>
+                                    <td>12-9-2023</td>
+                                    <td>12-9-2023</td>
+                                    <td>12-9-2024 03:12:29 PM</td>
+                                    <td>12-9-2024 03:12:29 PM</td>
+
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="rowCheckbox"></td>
+                                    <td>308</td>
+                                    <td>ib844509dg@waterstage.com</td>
+                                    <td>Services@geousafemrecovery.com</td>
+                                    <td>308</td>
+                                    <td>12-9-2023</td>
+                                    <td>12-9-2023</td>
+                                    <td>12-9-2024 03:12:29 PM</td>
+                                    <td>12-9-2024 03:12:29 PM</td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table_foot">
+                        <div class="down_buttons">
+                            <button>import</button>
+                            <button>export</button>
+                        </div>
+                        <div class="pages">
+                            <p>shows</p>
+                            <input type="number" name="pages" id="NumOfPages" min="1" max="10" value="1">
+                            <p>pages</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- settings section -->
+            <div class="settings ">
+                <div class="settings_head">
+                    <div class="activeSettings_button editProfile_button">edit profile</div>
+                    <div class="notification_button">notification</div>
+                    <div class="security_button">security</div>
+                </div>
+                <div class="settings_body">
+                    <div class="editprofile_section activeSettings_section ">
+                        <div class="editprofile_sectionContainer">
+                            <div class="settingsprofile_image">
+                                <img id="preview" src="Robot.png" alt="profile Image">
+                                <input type="file" accept="image" class="file-input" onchange="previewImage(event)">
+                            </div>
+                            <div class="settingprofile_details">
+                                <div class="settingsprofile_fields">
+                                    <div class="row">
+                                        <div class="cell">
+                                            <h3>Your Name</h3>
+                                            <input type="text" value="Mohamed saad">
+                                        </div>
+                                        <div class="cell">
+                                            <h3>User Name</h3>
+                                            <input type="text" value="Mohamed saad">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="cell">
+                                            <h3>Email</h3>
+                                            <input type="text" value="Mohmed saad@gmail.com">
+                                        </div>
+                                        <div class="cell">
+                                            <h3>Password</h3>
+                                            <input type="text" value="**********">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="cell">
+                                            <h3>Date of Birth</h3>
+                                            <input type="text" value="25 January 2002">
+                                        </div>
+                                        <div class="cell">
+                                            <h3>Present Address</h3>
+                                            <input type="text" value="Egypt cairo nasr city">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="cell">
+                                            <h3>Country</h3>
+                                            <input type="text" value="Egypt">
+                                        </div>
+                                        <div class="cell">
+                                            <h3>City</h3>
+                                            <input type="text" value="Cairo">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="save_button">
+                                    <button>save</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="notification_section">
+                        <div class="notification_sectionContainer">
+                            hello from notification
+                        </div>
+                    </div>
+                    <div class="security_section ">
+                        <div class="security_sectionContianer">
+                            <h1>two-factor authentication</h1>
+                            <div class="authentication">
+                                <div class="slider">
+                                    <input type="checkbox" id="authentication">
+                                </div>
+                                <h2>disabled two-factor authentication</h2>
+                            </div>
+                            <div class="password">
+                                <h2>Change Password</h2>
+                                <div class="current_password">
+                                    <h3>current password</h3>
+                                    <input type="password" id="current_password" value="**********">
+                                </div>
+                                <div class="new_password">
+                                    <h3>new password</h3>
+                                    <input type="password" id="new_password">
+                                </div>
+                            </div>
+                            <div class="save_button">
+                                <button>save</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="delet_popup">
+                <div id="popup" class="popup">
+                    <div class="popup_layout">
+                        <h2>Delete Row</h2>
+                        <p>Are you sure want to delete this row?</p>
+                        <div class="popup_buttons"><button id="closeButton">back</button>
+                            <button id="confirm">confirm</button>
+                        </div>
+
+                    </div>
+                </div>
+                <div id="overlay" class="overlay"></div>
+                <div class="delete_popup"></div>
+            </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
